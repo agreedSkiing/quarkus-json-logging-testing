@@ -18,6 +18,6 @@ public class StackTraceInMessageProvider implements JsonProvider {
       thrown.printStackTrace(new PrintWriter(sw));
       message = message + "" + sw;
     }
-    generator.add("message", message);
+    generator.add("log", message);
   }
 }
